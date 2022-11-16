@@ -5,6 +5,52 @@
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root {
+    --clr-white: white;
+    --clr-offwhite: aliceblue;
+}
+
 body {
     margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+aside {
+    min-width: 400px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    margin-top: 20vh;
+    padding-block: 2.5rem;
+    width: 100%;
+    user-select: none;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--clr-white);
+    background-color: rgba(0, 0, 0, .5)
+}
+
+footer,
+footer a {
+    color: var(--clr-offwhite);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--clr-offwhite);
+}
+
+footer {
+    padding-block: .5rem;
+    font-size: .8rem;
+    text-align: center;
 }
